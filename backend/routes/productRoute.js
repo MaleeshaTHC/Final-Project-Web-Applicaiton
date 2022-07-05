@@ -14,6 +14,7 @@ router
     .route('/products/:id')
     .put(isAuthenticateUser, authorizedRoles('admin'), updateProduct)
     .delete(isAuthenticateUser, authorizedRoles('admin'), deleteProduct)
-    .get(getProductDetails)
+    
+    router.route('/product/:id').get(getProductDetails)
 
 module.exports = router
