@@ -6,7 +6,8 @@ import Product from "./Product.js";
 const product = {
   name: "Blue Tshirt",
   price: "$300",
-  _id: "abishek",
+  image: [{url:'https://media.istockphoto.com/vectors/navy-blue-tshirt-vector-for-template-vector-id1133815061?k=20&m=1133815061&s=170667a&w=0&h=i8EJWQ2XYgdhGw3GpOL6oJtE8JdUPKu3OS-nlCfYVfc='}],
+  _id: "admin",
 };
 
 const Home = () => {
@@ -24,6 +25,14 @@ const Home = () => {
       </div>
       <h2 className="homeHeading">Featured Product</h2>
       <div className="container" id="container">
+        <Product product={product} />
+        <Product product={product} />
+        <Product product={product} />
+        <Product product={product} />
+
+        <Product product={product} />
+        <Product product={product} />
+        <Product product={product} />
         <Product product={product} />
       </div>
     </div>
